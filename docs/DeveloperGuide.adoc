@@ -1064,6 +1064,33 @@ Use case ends.
 ** 3a1. System gives user the option to state his/her preferred location and use case resumes from step 4.
 ** 3a2. If user does not state location, no common event location is set and use case ends.
 
+[discrete]
+=== UC13: Import contacts
+
+*MSS*
+
+. User request to import contacts.
+. System records and displays how many successfully added and duplicates.
++
+
+Use case ends.
+
+*Extensions*
+
+* 1a. User enters invalid file path (not a file or not an absolute path).
+** 1a1. System displays invalid file path.
++
+Use case ends.
++
+* 2a. System detects empty file.
+** 2a1. System displays empty file.
++
+Use case ends.
+* 2b. System detects invalid csv format (cannot find compulsory header in csv).
+** 2b1. System displays invalid csv file.
++
+Use case ends.
+
 
 ////
 === Coming in V2.0
@@ -1188,33 +1215,6 @@ User case ends.
 * 3a. User exits email screen without sending email.
 +
 ** 3a1. System returns to original screen.
-+
-Use case ends.
-
-[discrete]
-=== UC13: Import contacts
-
-*MSS*
-
-. User request to import contacts.
-. System records and displays how many successfully added and duplicates.
-+
-
-Use case ends.
-
-*Extensions*
-
-* 1a. User enters invalid file path (not a file or not an absolute path).
-** 1a1. System displays invalid file path.
-+
-Use case ends.
-+
-* 2a. System detects empty file.
-** 2a1. System displays empty file.
-+
-Use case ends.
-* 2b. System detects invalid csv format (cannot find compulsory header in csv).
-** 2b1. System displays invalid csv file.
 +
 Use case ends.
 
